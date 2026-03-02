@@ -144,12 +144,13 @@ img {
 }
 
 .hero-profile-img {
-    width: 150px;
-    height: 150px;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
     object-fit: cover;
-    border: 3px solid var(--accent-color);
-    margin-bottom: 1.5rem;
+    border: 5px solid var(--accent-color);
+    margin-bottom: 2rem;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
 }
 
 .hero-btns {
