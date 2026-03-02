@@ -65,6 +65,7 @@ img {
     cursor: pointer;
     font-size: 1rem;
     transition: background 0.3s ease;
+    text-decoration: none;
 }
 
 .btn:hover {
@@ -79,6 +80,12 @@ img {
     border-radius: 4px;
     font-size: 0.9rem;
     margin-right: 0.5rem;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.btn-small:hover {
+    background: var(--accent-color);
 }
 
 /* Navbar */
