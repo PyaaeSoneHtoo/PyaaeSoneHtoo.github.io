@@ -1,0 +1,11 @@
+{
+  "models": [
+    {
+      "title": "Claude 4.6 Sonnet (Vertex)",
+      "provider": "vertexai",
+      "model": "claude-4-6-sonnet",
+      "projectId": "project-ff37c317-ea19-4dd3-9e5",
+      "region": "us-east5"
+    }
+  ]
+}

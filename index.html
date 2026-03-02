@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Portfolio</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="hero-content">
+            <h1>Hi, I'm <span class="highlight">Your Name</span></h1>
+            <p>Web Developer | Designer | Creator</p>
+            <a href="#projects" class="btn">View My Work</a>
+        </div>
+    </header>
+
+    <section id="about" class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>I am a passionate developer looking to create amazing web experiences. I specialize in building responsive and user-friendly websites using modern technologies.</p>
+                <p>When I'm not coding, I enjoy learning new tools and contributing to open source projects.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="container bg-light">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-grid">
+            <!-- Project Card 1 -->
+            <div class="project-card">
+                <div class="project-image">
+                    <!-- Placeholder for project image -->
+                    <div class="placeholder-img">Project 1</div>
+                </div>
+                <div class="project-info">
+                    <h3>Project Title 1</h3>
+                    <p>A brief description of the project and the technologies used.</p>
+                    <a href="#" class="btn-small">View Demo</a>
+                    <a href="#" class="btn-small">Github</a>
+                </div>
+            </div>
+
+            <!-- Project Card 2 -->
+            <div class="project-card">
+                <div class="project-image">
+                    <div class="placeholder-img">Project 2</div>
+                </div>
+                <div class="project-info">
+                    <h3>Project Title 2</h3>
+                    <p>A brief description of the project and the technologies used.</p>
+                    <a href="#" class="btn-small">View Demo</a>
+                    <a href="#" class="btn-small">Github</a>
+                </div>
+            </div>
+
+            <!-- Project Card 3 -->
+            <div class="project-card">
+                <div class="project-image">
+                    <div class="placeholder-img">Project 3</div>
+                </div>
+                <div class="project-info">
+                    <h3>Project Title 3</h3>
+                    <p>A brief description of the project and the technologies used.</p>
+                    <a href="#" class="btn-small">View Demo</a>
+                    <a href="#" class="btn-small">Github</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        <form class="contact-form">
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Message" rows="5" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 My Portfolio. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
