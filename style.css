@@ -168,8 +168,10 @@ img {
 }
 
 .hero-profile-img {
-    width: 200px;
-    height: 200px;
+    width: 200px !important;
+    height: 200px !important;
+    max-width: 200px !important;
+    max-height: 200px !important;
     /* Octagon Shape */
     clip-path: polygon(
         30% 0%, 70% 0%, 
