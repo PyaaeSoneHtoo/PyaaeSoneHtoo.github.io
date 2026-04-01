@@ -516,23 +516,20 @@ section {
 
 .project-card {
     background-color: var(--bg-light);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border-radius: 20px;
-    padding: 2.5rem 2rem;
+    border-radius: 0;
+    padding: 2rem 1.75rem;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     height: 100%;
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border-top: 1px solid var(--bg-lighter);
+    transition: all 0.2s ease;
 }
 
 .project-card:hover {
-    transform: translateY(-8px);
-    border-color: rgba(255, 255, 255, 0.15);
-    background-color: rgba(255, 255, 255, 0.05);
-    box-shadow: 0 20px 40px -15px rgba(0,0,0,0.5);
+    transform: none;
+    background-color: var(--bg-lighter);
+    border-left: 4px solid var(--accent);
 }
 
 .project-card:hover .project-title a {
@@ -543,12 +540,12 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .folder-icon {
-    color: var(--accent);
-    font-size: 40px;
+    color: var(--accent-secondary);
+    font-size: 30px;
 }
 
 .project-links a {
@@ -562,17 +559,18 @@ section {
 }
 
 .project-title {
-    font-size: 22px;
+    font-size: 20px;
     margin-bottom: 10px;
 }
 
 .project-title a {
-    color: var(--text-main);
+    color: var(--accent);
 }
 
 .project-description {
-    font-size: 15px;
+    font-size: 14px;
     flex-grow: 1;
+    color: var(--text-main);
 }
 
 .project-tech-list {
@@ -603,18 +601,54 @@ section {
     text-align: center;
 }
 
+.contact .section-heading::before {
+    display: none;
+}
 .contact .section-heading::after {
     display: none;
 }
 
 .contact-title {
-    font-size: clamp(40px, 5vw, 60px);
+    font-size: clamp(30px, 5vw, 40px);
     margin-bottom: 20px;
+    color: var(--accent-secondary);
 }
 
 .contact-text {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
+    font-size: 16px;
+    font-family: var(--font-mono);
+}
+
+.contact-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.contact-buttons .btn i {
+    margin-right: 8px;
     font-size: 18px;
+}
+
+.btn-email:hover {
+    background-color: var(--bg-lighter);
+    color: #ea4335;
+    border-color: #ea4335;
+}
+
+.btn-whatsapp:hover {
+    background-color: var(--bg-lighter);
+    border-color: #25D366;
+    color: #25D366;
+}
+
+.btn-telegram:hover {
+    background-color: var(--bg-lighter);
+    border-color: #0088cc;
+    color: #0088cc;
 }
 
 .social-links {
